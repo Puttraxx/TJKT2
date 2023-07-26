@@ -1,0 +1,707 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navigation */
+header{
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header button{
+    display: none;
+    font-family: 'Kanit';
+    margin-top: 10px;
+    padding: 5px 15px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+  
+header button{
+    color: rgb(248, 238, 225);
+    background: rgb(42, 41, 40);
+    box-shadow: 0 0 25px rgb(42, 41, 40);
+    top: 8px;
+}
+  
+header button:hover{
+    box-shadow: 0 0 5px rgb(248, 238, 225),
+                0 0 25px rgb(248, 238, 225),
+                0 0 50px rgb(248, 238, 225),
+                0 0 100px rgb(248, 238, 225);
+}
+
+/* wave bg */
+section{
+    color: rgb(248, 238, 225);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right top, rgb(2, 106, 253), rgb(61, 141, 253))
+}
+
+section .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(project-tjkt-assets/wave.png);
+    background-size: 1000px 100px;
+}
+
+section .wave.wave1{
+    animation: animate1 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+section .wave.wave3{
+    animation: animate3 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+section .wave.wave4{
+    animation: animate4 15s linear infinite;
+    z-index: 997;
+    opacity: 0.6;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animate1{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
+
+@keyframes animate3{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate4{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
+
+/* isi page1 */
+.isipage1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.isipage1 h1{
+    letter-spacing: 1px;
+    font-family: 'Kanit';
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.isipage1 h2{
+    padding-top: 3px;
+    letter-spacing: 2px;
+    margin-top: -10px;
+    font-family: 'Kanit';
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.isipage1 p{
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* isipage2 */
+.page2{
+    height: 800px;
+}
+
+.page2 h1{
+    display: inline-block;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    font-size: 60px;
+    position: relative;
+    left: 200px;
+    top: 40px; 
+}
+
+.page2 h2{
+    display: inline-block;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    font-size: 20px;
+    position: relative;
+    left: 270px;
+    top: 40px; 
+    z-index: 200;
+}
+
+.page2img1 img{
+    position: absolute;
+    left: 880px;
+    top: 865px;
+    border-radius: 10px;
+}
+
+.page2img1 p{
+    font-family: 'Agdasima';
+    position: relative;
+    left: 1030px;
+    top: 230px;
+    display: inline-block;
+}
+
+.page2img2 img{
+    position: absolute;
+    top: 1200px;
+    left: 220px;
+    border-radius: 15px;
+}
+
+.page2p1 p{
+    position: relative;
+    font-family: 'Poppins';
+    left: 230px;
+    top: 30px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.page2p2 p{
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins';
+    left: 230px;
+    top: 30px;
+}
+
+.page2p3 h2{
+    display: inline-block;
+    position: relative;
+    left: 700px;
+    top: -210px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.page2p3 p{
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins';
+    left: 100px;
+    top: 100px;
+}
+
+.bawahimgwd{
+    font-family: 'Agdasima';
+    display: inline-block;
+    position: relative;
+    left: 370px;
+    top: 30px;
+}
+
+/* ombak kedua waw */
+.wave2{
+    height: 100px;
+}
+
+.wave2{
+    position: relative;
+    width: 100%;
+}
+
+.wave2 .wave{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(project-tjkt-assets/waveflip.png);
+    background-size: 1000px 100px;
+}
+
+.wave2 .wave.wave5{
+    animation: animate5 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.wave2 .wave.wave6{
+    animation: animate6 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+.wave2 .wave.wave7{
+    animation: animate7 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+.wave2 .wave.wave8{
+    animation: animate8 15s linear infinite;
+    z-index: 997;
+    opacity: 0.6;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animate5{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate6{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
+
+@keyframes animate7{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate8{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
+
+/* bg page 2 dan 3 */
+.buatbgdoang{
+   background: linear-gradient(to right top, rgb(2, 106, 253), rgb(61, 141, 253))
+}
+
+/* atasnya card */
+.atasnyacard{
+    padding-top: 60px;
+    text-align: center;
+}
+
+.atasnyacard h1{
+    color: rgb(248, 238, 225);
+    font-family: 'Montserrat';
+    font-size: 50px;
+    display: inline-block;
+    text-shadow: 2px 2px 2px rgb(41, 41, 41);
+
+}
+
+/* cards */
+.cardcard{
+    padding-top: 40px;
+    display: flex;
+    justify-content:space-evenly;
+    padding-bottom: 50px;
+}
+
+.card1{
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(248, 238, 225);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 1px rgb(69, 69, 69);
+}
+
+.card1 img{
+    border-radius: 50%;
+    background-color: rgb(248, 238, 225);
+    border: 1px solid rgb(69, 69, 69);
+}
+
+.card1 h4{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.card2{
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(248, 238, 225);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 1px rgb(69, 69, 69);
+}
+
+.card2 img{
+    border-radius: 50%;
+    background-color: rgb(248, 238, 225);
+    border: 1px solid rgb(69, 69, 69);
+}
+
+.card2 h4{
+    padding-top: 25px;
+}
+
+/* page3 ini ni */
+.judulpage3 h1{
+    color: rgb(248, 238, 225);
+    font-family: 'Montserrat';
+    font-size: 50px;
+    position: relative;
+    left: 400px;
+    top: 60px;
+    display: inline-block;
+}
+
+.page3{
+    height: 700px;
+    position: relative;
+    width: 100%;
+}
+
+.page3kiri h1{
+    color: rgb(248, 238, 225);
+    font-family: 'Poppins';
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(41, 41, 41);
+}
+
+.page3kanan h1{
+    color: rgb(248, 238, 225);
+    text-shadow: 2px 2px 2px rgb(41, 41, 41);
+    font-family: 'Poppins';
+    font-size: 50px;
+    text-align: center;
+}
+
+.page3kanan p{
+    text-align: center;
+    color: rgb(248, 238, 225);
+    font-family: 'Poppins';
+}
+
+.listkelas2{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.page3kiri p{
+    text-align: center;
+    color: rgb(248, 238, 225);
+    font-family: 'Poppins';
+}
+
+.listkelas1{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* page4 disini */
+
+.page4{
+    height: 1700px;
+    margin: 40px 20px 0 20px;
+    text-align: center;
+}
+
+.page4 h1{
+    display: inline-block;
+    color: rgb(41, 41, 41);
+    padding: 0 100px 5px 100px; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    border-bottom: 3px solid rgb(41, 41, 41);
+    font-size: 3em;
+}
+
+.page4 h1 span{
+    color: rgb(41, 41, 41);
+    font-weight: lighter;
+}
+
+.page4 .dream{
+    padding-top: 30px;
+}
+
+.page4 .boxbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 30px;
+}
+
+.page4 .boxbox .dream1{
+    display: flex;
+    flex-direction: column;
+}
+
+.page4 .boxbox .dream2{
+    display: flex;
+    flex-direction: column;
+}
+
+.page4 .boxbox .dream3{
+    display: flex;
+    flex-direction: column;
+}
+
+.dream1 img{
+    padding: 2px 2px 2px 2px;;
+}
+
+.dream2 img{
+    padding: 2px 2px 2px 2px;;
+}
+
+.dream3 img{
+    padding: 2px 2px 2px 2px;
+}
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(248, 238, 225);
+    background: linear-gradient(to right top, rgb(2, 106, 253), rgb(61, 141, 253));
+    width: 100%;
+}
+
+.footer h1{
+    padding-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    font-family:'Poppins';
+    font-weight: 300;
+}
+
+
+.fa {
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .isipage1 img{
+        width: 300px;
+        margin-top: 20%;
+    }
+    
+    .isipage1 h1{
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    
+    .isipage1 h2{
+        padding-top: 3px;
+        letter-spacing: 2px;
+        margin-top: -10px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .isipage1 p{
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 11px;
+    }
+    
+    section .wave{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(project-tjkt-assets/wave.png);
+        background-size: 600px 100px;
+    }
+
+
+
+
+
+    .page2{
+        width: 100%;
+        height: 800px;
+    }
+    
+    .page2 h1{
+        text-align: center;
+        display: inline-block;
+        left: 0;
+        letter-spacing: 1px;
+        font-size: 28px;
+    }
+    
+    .page2 h2{
+        text-align: center;
+        left: 0;
+        position: relative;
+        display: inline-block;
+        font-family: 'Montserrat';
+        letter-spacing: 1px;
+        font-size: 11px;
+    }
+    
+    .page2img1 img{
+        width: 100px;
+        position: relative;
+        left: 0px;
+        top: 5000px;
+        border-radius: 10px;
+    }
+    
+    .page2img1 p{
+        text-align: center;
+        font-family: 'Agdasima';
+        display: inline-block;
+        left: 0;
+        top: 2000px;
+    }
+    
+    .page2img2 img{
+        position: relative;
+        width: 100px;
+        top: 2000px;
+        left: 0px;
+        border-radius: 15px;
+    }
+    
+    .page2p1 p{
+        position: relative;
+        font-size: 8px;
+        font-family: 'Poppins';
+        left: 0px;
+        top: 00px;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+    
+    .page2p2 p{
+        font-size: 8px;
+        display: inline-block;
+        position: relative;
+        font-family: 'Poppins';
+        left: 0px;
+        top: 0px;
+    }
+    
+    .page2p3 h2{
+        display: inline-block;
+        position: relative;
+        left: 0px;
+        top: 0px; 
+        font-family: 'Montserrat';
+        font-size: 20px;
+    }
+    
+    .page2p3 p{
+        font-size: 8px;
+        display: inline-block;
+        position: relative;
+        font-family: 'Poppins';
+        left: 00px;
+        top: 00px;
+    }
+    
+    .bawahimgwd{
+        font-family: 'Agdasima';
+        display: inline-block;
+        position: relative;
+        left: 0px;
+        top: 1000px;
+    }
+
+}
